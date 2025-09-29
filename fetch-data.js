@@ -14,7 +14,7 @@
             users.forEach(element => {
                 let user = document.createElement("li")
                 user.innerHTML = element.name;
-                userList.append(user)
+                userList.appendChild(user)
             });
             dataContainer.append(userList)
             
