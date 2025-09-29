@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let isValid = true
         let messages = []
         
-        if (username.legth > 3) {
+        if (username.length < 3) {
             messages.push(`Your provided username '${username}' is Invalid`)
             isValid = false
             console.log(isValid)
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function(){
             isValid = false
             console.log(isValid)
         }
-        else if (password.legth < 8) {
+        else if (password.length < 8) {
             messages.push(`Invalid password`)
             isValid = false
             console.log(isValid)
